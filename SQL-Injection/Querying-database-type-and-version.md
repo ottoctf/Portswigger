@@ -6,7 +6,7 @@ To solve the lab, display the database version string.
 
 ## Lösning
 
-Jag använder Burp Suite för att kunna fånga HTTP GET Request av en kategori i Burp Proxy. Därefter skickade jag vidare den till Burp Repeater. Så att jag kan prova olika payloads enkelt utan att behöva fånga nya requests.
+Jag använder Burp Suite för att kunna fånga HTTP GET Request av en kategori i Burp Proxy. Därefter skickade jag vidare den till Burp Repeater. På så sätt kan jag prova olika payloads enkelt utan att behöva fånga nya requests.
 
 Jag började med att enumerera antalet kolumner som SELECT-satsen hämtar från databasen. 
 
