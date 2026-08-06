@@ -12,7 +12,7 @@ To solve the lab, perform a SQL injection attack that logs in to the application
 
 ### Inloggningen
 
-Anledningen till att det går att logga in som `administrator` är att applikationen bygger en SQL-fråga direkt med användarens inmatning, utan att den först valideras eller parameteriseras.
+Anledningen till att det går att logga in som `administrator` är att applikationen bygger en SQL-fråga direkt med användarens inmatning, utan att användarinmatningen behandlas som data genom parameteriserade SQL-frågor.
 
 En normal inloggning kan exempelvis resultera i följande SQL-fråga:
 ```sql
