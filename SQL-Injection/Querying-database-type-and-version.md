@@ -46,7 +46,7 @@ I en Oracle-databas så innehåller `banner` kolumnen i systemvyn `v$version` ve
 
 UNION SELECT-satsen måste returnera samma antal kolumner som den ursprungliga SELECT-satsen, vilket i detta fall är två kolumner.
 
-Därför används `NULL` för att endast uppfylla det kravet.
+Därför används `NULL` som en platshållare för att uppfylla det kravet.
 
 Min SQL-injektions payload blir därför:
 ```sql
