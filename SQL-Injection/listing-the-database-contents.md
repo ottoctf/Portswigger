@@ -42,14 +42,14 @@ Jag loggade in med de uppgifter jag hade hämtat.
 
 ## Förklaring 
 
-I denna labb så får man veta att det inte är en Oracle-databas. 
-I ett verkligt scenario så hade man behövt enumerera det först. För en mer detaljerad förklaring se min andra writeup: 
+I denna labb får man veta att det inte är en Oracle-databas. 
+I ett verkligt scenario hade databastypen behövt identifieras först. För en mer detaljerad förklaring se min andra writeup: 
 
 [SQL injection attack, querying the database type and version on Oracle](../SQL-Injection/querying-database-type-and-version.md)
 
-Efter att jag identifierat att `UNION SELECT-satsen` kräver två kolumner så enumererar jag vilka tabeller som finns i databasen.
+Efter att jag identifierat att `UNION SELECT`-satsen kräver två kolumner så enumererar jag vilka tabeller som finns i databasen.
 
-I databas som inte är `Oracle`så finns ett systemschema som heter information_schema. 
+I databaser som inte är `Oracle` så finns ett systemschema som heter information_schema. 
 
-Information_schema innehåller data om databasen. Till skillnad från vanliga tabeller lagrar det inte applikationens data, utan information om databasens struktur, exempelvis vilka tabeller och kolumner som finns. 
-Vid SQL-injektion kan detta användas för att enumerera databasen innan känslig data hämtas.
+Information_schema innehåller metadata om databasen. Till skillnad från vanliga tabeller lagrar det inte applikationens data, utan information om databasens struktur, exempelvis vilka tabeller och kolumner som finns. 
+Vid SQL-injektion kan detta användas för att enumerera databasen innan känslig information hämtas.
