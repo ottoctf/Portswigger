@@ -78,7 +78,7 @@ Detta resulterade i att jag hittade kolumnerna username_ybjzkb och password_igpj
 
 Slutligen så hämtade jag innehållet från `username_ybjzkb` och `password_igpjhi`.
 
-Eftersom båda kolumnerna används för den information jag vill hämta behövs ingen NULL som platshållare i denna payload. Utan endast de två tabeller jag vill hämta innehållet av.
+Eftersom båda kolumnerna används för den information jag vill hämta behövs ingen NULL som platshållare i denna payload. Utan jag kan istället hämta information från båda tabellerna på samma gång.
 
 ```sql
 UNION SELECT username_ybjzkb,password_igpjhi FROM users_aywgaj
