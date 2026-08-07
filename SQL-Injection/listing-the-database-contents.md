@@ -47,33 +47,9 @@ I ett verkligt scenario så hade man behövt enumerera det först. För en mer d
 
 [SQL injection attack, querying the database type and version on Oracle](../SQL-Injection/querying-database-type-and-version.md)
 
+Efter att jag identifierat att `UNION SELECT-satsen` kräver två kolumner så enumererar jag vilka tabeller som finns i databasen.
 
+I databas som inte är `Oracle`så finns ett systemschema som heter information_schema. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-information_schema är ett systemschema som innehåller data om databasen. 
-Till skillnad från vanliga tabeller lagrar det inte applikationens data, utan information om databasens struktur, exempelvis vilka tabeller och kolumner som finns. 
+Information_schema innehåller data om databasen. Till skillnad från vanliga tabeller lagrar det inte applikationens data, utan information om databasens struktur, exempelvis vilka tabeller och kolumner som finns. 
 Vid SQL-injektion kan detta användas för att enumerera databasen innan känslig data hämtas.
