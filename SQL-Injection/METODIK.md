@@ -5,7 +5,9 @@ Dessa writeups dokumenterar inte endast lösningen på olika säkerhetslabb, uta
 De hänger även ihop till viss del, de är skrivna i följande ordning:
 
 [Login Bypass](../SQL-Injection/login-bypass.md)
+
 [Querying the database type and version](../SQL-Injection/querying-database-type-and-version.md)
+
 [Listing the database contents](../SQL-Injection/listing-the-database-contents.md)
 
 
