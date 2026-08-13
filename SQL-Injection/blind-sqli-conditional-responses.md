@@ -20,7 +20,7 @@ I response-sektionen så sökte jag efter nyckelordet `Welcome` och fick en matc
 
 SQL-injektionssårbarheten finns i sidans `TrackingId` cookie.
 
-För att verifiera detta började jag med att testa ett förhållande som alltid är sant `AND '1'='1`.
+För att verifiera detta började jag med att testa ett förhållande som alltid är sant: `AND '1'='1`.
 
 <img width="1262" height="835" alt="bild" src="https://github.com/user-attachments/assets/54842743-9d4e-4794-9967-b994ed7ab58a" />
 
