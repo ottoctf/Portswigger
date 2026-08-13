@@ -77,11 +77,11 @@ Attacken kommer då testa alla tecken i min ordlista mot första positionen i l�
 
 <img width="1433" height="806" alt="bild" src="https://github.com/user-attachments/assets/11e48206-b293-449a-ac9a-3531cd7381da" />
 
-Jag behövde därefter ändra payloaden till 
+För att testa andra positionen i lösenordet behövde jag därefter ändra payloaden till 
 ```sql
 AND (SELECT SUBSTRING(password,2,1) FROM users WHERE username='administrator')='a
 ```
-För att testa andra positionen i lösenordet och fortsätta tills jag hade hittat en matchning för alla 20 positioner.
+och fortsätta likadant tills jag hade hittat en matchning för alla 20 positioner.
 
 Slutligen så fick jag fram lösenordet `fkjzcapznoveacipvbew` vilket jag kunde använda för att logga in på kontot `administrator`.
 
