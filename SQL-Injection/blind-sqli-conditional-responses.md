@@ -162,7 +162,9 @@ När jag identifierat ett användarnamn kunde jag börja enumerera lösenordet.
 
 Först behövde jag ta reda på lösenordets längd. Jag använde `LENGTH()`-funktionen och testade olika värden.
 ```sql
-AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>=1)='a
+AND (SELECT 'a'
+FROM users
+WHERE username='administrator' AND LENGTH(password)>=1)='a
 ```
 
 SQL-frågan blir då i praktiken `"Är lösenordets längd minst ett tecken?"`
