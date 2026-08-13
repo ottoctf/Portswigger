@@ -10,6 +10,8 @@ De hänger även ihop till viss del, de är skrivna i följande ordning:
 
 [Listing the database contents](../SQL-Injection/listing-the-database-contents.md)
 
+[Blind SQL injection with conditional responses](../SQL-Injection/blind-sqli-conditional-responses.md)
+
 
 Varje writeup är strukturerad med följande delar:
 
