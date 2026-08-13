@@ -45,7 +45,7 @@ Därefter verifierar jag att användaren `administrator` finns med i tabellen `u
 Nästa steg var att enumerera hur många tecken som ingick i lösenordet för `administrator`
 
 ```sql
-AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>=1)
+AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>=1)='a
 ```
 
 Detta måste göras tills förhållandet inte längre blir sant. `LENGTH(password)>=20` var fortfarande sant medan `LENGTH(password)>=21` var falskt, vilket betyder att lösenordet är 20 tecken långt.
