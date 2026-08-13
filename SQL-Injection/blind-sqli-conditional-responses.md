@@ -228,9 +228,11 @@ Därefter flyttade jag `SUBSTRING()` till nästa position i lösenordet.
 
 Sedan upprepade jag processen för samtliga 20 positioner.
 
-* Position 1: SUBSTRING(password,1,1) 
-* Position 2: SUBSTRING(password,2,1) 
-* Position 3: SUBSTRING(password,3,1)
+ * Position 1: SUBSTRING(password,1,1)
+   
+ * Position 2: SUBSTRING(password,2,1) 
+ 
+ * Position 3: SUBSTRING(password,3,1)
 
 Varje position testades med ordlistan. De resultat som returnerade `Welcome` skrev jag ner i ordning.
 
