@@ -26,7 +26,7 @@ För att verifiera detta började jag med att testa ett förhållande som alltid
 
 Jag verifierade att `Welcome back!` meddelandet fortfarande visades.
 
-Därefter provade jag ett förhållande som aldrig är sant `AND '1'='2`.
+Därefter provade jag ett förhållande som aldrig är sant: `AND '1'='2`.
 
 <img width="1266" height="845" alt="bild" src="https://github.com/user-attachments/assets/0fd41f9f-f241-4e92-a532-97474cb969a4" />
 
