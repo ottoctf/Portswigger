@@ -262,17 +262,11 @@ Eftersom att jag använder Burp Suite Community Edition blir attacken mycket lå
 
 Hade ordlistan varit mycket större än de 36 tecknen som används i detta fall så hade man kunnat använda följande payloads för att minska området man måste söka efter rätt tecken:
 ```sql
-AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')>='a
+AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')>'100
 ```
-Detta frågar då ifall första tecknet är större än eller lika med `a`.
+Detta frågar då med hjälp av ASCII ifall första tecknet är större än ett litet `d`.
 
-Nästa fråga hade därefter kunnat vara:
-```sql
-AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username='administrator')>='p
-```
-Detta frågar då ifall första tecknet är större än eller lika med `p`.
-
-Man kan då halvera sökområdet stegvis.
+Är svaret då nej så har man eliminerat halva alfabetet från sökningen och kan då använda en mindre ordlista för att snabbare kunna hitta rätt tecken.
 
 
 
