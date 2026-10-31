@@ -1,8 +1,8 @@
 # Metodik för writeups
 
-Dessa writeups dokumenterar inte endast lösningen på olika säkerhetslabb, utan även tankegången bakom processen och de koncept som är relevanta.
+Dessa writeups dokumenterar lösningen på olika säkerhetslabb, tankegången bakom processen och de koncept som är relevanta.
 
-De hänger även ihop till viss del, de är skrivna i följande ordning:
+## SQL-Injection
 
 [Login Bypass](../SQL-Injection/login-bypass.md)
 
@@ -14,17 +14,3 @@ De hänger även ihop till viss del, de är skrivna i följande ordning:
 
 [Blind SQL injection with conditional errors](../SQL-Injection/blind-sqli-conditional-errors.md)
 
-
-Varje writeup är strukturerad med följande delar:
-
-## Lösning
-
-Beskriver de praktiska stegen som utfördes för att identifiera och utnyttja sårbarheten.
-
-## Förklaring
-
-Förklarar varför sårbarheten uppstår, hur exploateringen fungerar och vilka tekniska koncept som ligger bakom.
-
-## Mitigering
-
-Beskriver hur sårbarheten kan förhindras i en verklig applikation.
